@@ -54,12 +54,10 @@ const main = () => __awaiter(void 0, void 0, void 0, function* () {
                     JSON.stringify(recipe.nutrition), JSON.stringify(recipe.ingredients), JSON.stringify(recipe.recipeInstructions), JSON.stringify(recipe.recipeIngredient),
                     recipe.recipeYield, reci.url, JSON.stringify(recipe.publisher), rVideo, rImage, recipe.aggregateRating.ratingValue, recipe.aggregateRating.bestRating, recipe.aggregateRating.worstRating, recipe.aggregateRating.reviewCount, JSON.stringify(recipe.aggregateRating), JSON.stringify(recipe.author)];
                 const resi = yield connectionRECIPE.query(sqli, recipeItem);
-                //break;
                 yield delay(3000);
             }
             console.log(`Page: ${page}`);
             page++;
-            //break;
         }
         catch (err) {
             console.log(err);
@@ -93,13 +91,5 @@ function getRecipe(href) {
         });
     });
 }
-/*
-getRecipesPage(1).then(recipes => {
-    // ваши действия
-    console.log(recipes);
-}).catch(err => {
-    console.error(err);
-});
-*/
 const delay = (ms) => { return new Promise((resolve) => { setTimeout(resolve, ms); }); };
 //# sourceMappingURL=load-edaru.js.map

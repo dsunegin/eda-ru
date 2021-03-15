@@ -45,7 +45,7 @@ const main = async () => {
                     recipe.recipeYield, reci.url, JSON.stringify( recipe.publisher), rVideo, rImage, recipe.aggregateRating.ratingValue, recipe.aggregateRating.bestRating, recipe.aggregateRating.worstRating, recipe.aggregateRating.reviewCount, JSON.stringify( recipe.aggregateRating), JSON.stringify( recipe.author)];
                 const resi = await connectionRECIPE.query(sqli, recipeItem);
 
-                //break;
+
                 await delay(3000);
 
 
@@ -54,7 +54,7 @@ const main = async () => {
 
             console.log(`Page: ${page}`);
             page++;
-            //break;
+            
 
         } catch (err) {
             console.log(err);
@@ -96,14 +96,6 @@ function getRecipe(href: string) : Promise<any> {
     });
 }
 
-/*
-getRecipesPage(1).then(recipes => {
-    // ваши действия
-    console.log(recipes);
-}).catch(err => {
-    console.error(err);
-});
-*/
 
 const delay = (ms: number) => {  return new Promise( (resolve) => {setTimeout(resolve, ms)});}
 
