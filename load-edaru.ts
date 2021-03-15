@@ -1,4 +1,4 @@
-const eda = require('afisha-eda');
+const eda = require('./afisha-eda');
 const mysql = require("mysql2");
 const envconf = require('dotenv').config();
 
