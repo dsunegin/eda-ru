@@ -2,7 +2,7 @@
   "name": "eda-ru",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/load-edaru.js",
+  "main": "load-edaru.js",
   "scripts": {
     "start": "tsc && node load-edaru.js",
     "test": "echo \"Error: no test specified\" && exit 1"
