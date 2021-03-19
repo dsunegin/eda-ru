@@ -54,7 +54,7 @@ const main = async () => {
 
             console.log(`Page: ${page}`);
             page++;
-            
+
 
         } catch (err) {
             console.log(err);
